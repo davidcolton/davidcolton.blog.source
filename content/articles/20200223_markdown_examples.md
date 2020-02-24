@@ -1,5 +1,6 @@
 Author: David Colton
 Date: 2020-02-23 10:30
+Modified: 2020-02-24 10:35
 Category: blogging
 Tags: markdown, pygments
 Title: Pelican Markdown Test Page 
@@ -27,7 +28,7 @@ To create paragraphs, use a blank line to separate one or more lines of text.
 
 ### Line Breaks
 
-To create a line break (<br>), end a line with two or more spaces, and then type return.
+To create a line break (&lt;br&gt;), end a line with two or more spaces, and then type return.
 
 ### Some more examples
 
@@ -257,7 +258,7 @@ All of the following code will be highlighted while the text is indented.
     def do_twice(func):
         def wrapper_do_twice(*args, **kwargs):
             return func(*args, **kwargs).lower()
-    return wrapper_do_twice
+        return wrapper_do_twice
 
     @do_twice
     def say_whee(some_text):
@@ -273,6 +274,6 @@ And the raw markdown to produce this code block looks like:
     def do_twice(func):
         def wrapper_do_twice(*args, **kwargs):
             return func(*args, **kwargs).lower()
-    return wrapper_do_twice
+        return wrapper_do_twice
     ...    
 
