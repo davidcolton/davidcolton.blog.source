@@ -6,6 +6,7 @@ AUTHOR = "David Colton"
 SITENAME = "David's Blog"
 SITESUBTITLE = "The ramblings of a frustated Python Data Scientist ..."
 SITEIMAGE = "/images/python_programming.png width=150 height=150"
+DISQUS_SITENAME = "davidcoltonblog"
 SITEURL = ""
 
 PATH = "content"
