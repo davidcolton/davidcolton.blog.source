@@ -3,22 +3,29 @@
 from __future__ import unicode_literals
 
 AUTHOR = "David Colton"
-SITENAME = "David Colton's Blog"
+SITENAME = "David's Blog"
+SITESUBTITLE = "The ramblings of a frustated Python Data Scientist ..."
+SITEIMAGE = "/images/python_programming.png width=150 height=150"
 SITEURL = ""
 
 PATH = "content"
 OUTPUT_PATH = "../output"
 
-THEME = "theme"
+THEME = "themes/pelican-alchemy/alchemy"
 
 TIMEZONE = "Europe/Dublin"
 
 DEFAULT_LANG = "en"
 
 PLUGIN_PATHS = ["plugins/"]
-PLUGINS = ["i18n_subsites"]
+PLUGINS = ["pelican-bootstrapify", "i18n_subsites", "render_math"]
 JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
 
+BOOTSTRAPIFY = {
+    "table": ["table", "table-striped", "table-hover"],
+    "img": ["img-fluid"],
+    "blockquote": ["blockquote"],
+}
 BOOTSTRAP_THEME = "flatly"
 
 PYGMENTS_STYLE = "monokai"
@@ -26,10 +33,29 @@ PYGMENTS_STYLE = "monokai"
 ARTICLE_PATHS = ["articles"]
 PAGE_PATHS = ["pages"]
 
-STATIC_PATHS = ["images", "pdf"]
+MATH_JAX = {"color": "blue", "align": "center"}
+
+STATIC_PATHS = ["extras", "images", "pdf"]
 # For example
 # ![python logo]({static}/img/python_icon.png)
 # [Pelican Documenation]({static}/pdf/pelican.pdf)
+
+EXTRA_PATH_METADATA = {
+    "extras/android-chrome-192x192.png": {"path": "android-chrome-192x192.png"},
+    "extras/android-chrome-512x512.png": {"path": "android-chrome-512x512.png"},
+    "extras/apple-touch-icon.png": {"path": "apple-touch-icon.png"},
+    "extras/browserconfig.xml": {"path": "browserconfig.xml"},
+    "extras/favicon-16x16.png": {"path": "favicon-16x16.png"},
+    "extras/favicon-32x32.png": {"path": "favicon-32x32.png"},
+    "extras/favicon.ico": {"path": "favicon.ico"},
+    "extras/manifest.json": {"path": "manifest.json"},
+    "extras/mstile-150x150.png": {"path": "mstile-150x150.png"},
+    "extras/safari-pinned-tab.svg": {"path": "safari-pinned-tab.svg"},
+}
+
+RFG_FAVICONS = True
+
+HIDE_AUTHORS = True
 
 # Output format
 ARTICLE_URL = "articles/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
@@ -50,9 +76,14 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Python.org", "http://python.org/"),
+    ("Python", "http://python.org/"),
     ("PyBites", "http://codechalleng.es/"),
-    ("Pelican", "http://getpelican.com/"),
+)
+
+ICONS = (
+    ("twitter", "https://twitter.com/David__Colton"),
+    ("github", "https://github.com/davidcolton/"),
+    ("linkedin", "https://www.linkedin.com/in/davidcolton/"),
 )
 
 # Social widget
@@ -62,6 +93,10 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = False
+
+# Default value is ['index', 'tags', 'categories', 'authors', 'archives']
+DIRECT_TEMPLATES = ["index", "tags", "categories", "authors", "archives", "sitemap"]
+SITEMAP_SAVE_AS = "sitemap.xml"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
