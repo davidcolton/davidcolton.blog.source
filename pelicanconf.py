@@ -7,7 +7,7 @@ SITENAME = "David's Blog"
 SITESUBTITLE = "The ramblings of a frustated Python Data Scientist ..."
 SITEIMAGE = "/images/python_programming.png width=150 height=150"
 DISQUS_SITENAME = "davidcoltonblog"
-SITEURL = ""
+SITEURL = "https://davidcolton.github.io"
 
 PATH = "content"
 OUTPUT_PATH = "../output"
