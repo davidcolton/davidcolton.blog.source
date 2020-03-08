@@ -1,5 +1,6 @@
 Author: David Colton
 Date: 2020-03-04 19:45
+Modified: 2020-03-08 22:55
 Category: blogging
 Tags: pelican, python, blogging
 Title: Building My Blog With Pelican And Python 
