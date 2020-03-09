@@ -24,7 +24,7 @@ When installing this plugin the instructions suggestion adding the entire pelica
 
 ## Configuring the Plugin
 
-Before using the `'pelican-ipynb.markup' a little bit of housework is required. You you need to add '.ipynb' to the markup extensions variable, if not already defined, and you need to ignore the ever annoying '.ipynb_checkpoints' folder to the ignore file variable. If these variables don't already exist just create them:
+Before using the `'pelican-ipynb.markup' a little bit of housework is required. You need to add '.ipynb' to the markup extensions variable, if not already defined, and you need to ignore the ever annoying '.ipynb_checkpoints' folder to the ignore file variable. If these variables don't already exist just create them:
 
     :::python
     MARKUP = ('md', 'ipynb')
@@ -46,6 +46,7 @@ You can now just add the metadata in the first notebook cell in markdown mode li
     - Tags: pelican, python, blogging, jupyter
     - Title: Adding support for Jupyter Notebooks 
     - Slug: ipynb_support
+    - Description: A sample Jupyter Notebook to add to my Blog
 
 You can find [My First Jupyter Notebook]({filename}/articles/20200309_sample_ipynb.ipynb) here. You may think, hmmm, this doesn't look like a Jupyter Notebook. What's with the black cells. I've kept the sample code block CSS style from the rest of the site by setting this variable:
 
