@@ -19,7 +19,12 @@ TIMEZONE = "Europe/Dublin"
 DEFAULT_LANG = "en"
 
 PLUGIN_PATHS = ["plugins/"]
-PLUGINS = ["pelican-bootstrapify", "i18n_subsites", "render_math"]
+PLUGINS = [
+    "pelican-bootstrapify",
+    "i18n_subsites",
+    "pelican-ipynb.markup",
+    "render_math",
+]
 JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
 
 BOOTSTRAPIFY = {
@@ -102,3 +107,8 @@ SITEMAP_SAVE_AS = "sitemap.xml"
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+# Adding Jupyter Notebooks Support
+MARKUP = ("md", "ipynb")
+IGNORE_FILES = [".ipynb_checkpoints"]
+IPYNB_USE_METACELL = True
+IPYNB_SKIP_CSS = True
