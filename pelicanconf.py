@@ -7,12 +7,14 @@ SITENAME = "David's Blog"
 SITESUBTITLE = "The ramblings of a frustated Python Data Scientist ..."
 SITEIMAGE = "/images/python_programming.png width=150 height=150"
 DISQUS_SITENAME = "davidcoltonblog"
-SITEURL = "https://davidcolton.github.io"
+SITEURL = ""
+# SITEURL = "https://davidcolton.github.io"
 
 PATH = "content"
 OUTPUT_PATH = "../output"
 
 THEME = "themes/pelican-alchemy/alchemy"
+# THEME_CSS_OVERRIDES = ["jupyter.css"]
 
 TIMEZONE = "Europe/Dublin"
 
@@ -34,7 +36,7 @@ BOOTSTRAPIFY = {
 }
 BOOTSTRAP_THEME = "flatly"
 
-PYGMENTS_STYLE = "monokai"
+PYGMENTS_STYLE = "manni"
 
 ARTICLE_PATHS = ["articles"]
 PAGE_PATHS = ["pages"]
@@ -81,10 +83,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (
-    ("Python", "http://python.org/"),
-    ("PyBites", "http://codechalleng.es/"),
-)
+LINKS = (("Python", "http://python.org/"), ("PyBites", "http://codechalleng.es/"))
 
 ICONS = (
     ("twitter", "https://twitter.com/David__Colton"),
@@ -111,4 +110,4 @@ SITEMAP_SAVE_AS = "sitemap.xml"
 MARKUP = ("md", "ipynb")
 IGNORE_FILES = [".ipynb_checkpoints"]
 IPYNB_USE_METACELL = True
-IPYNB_SKIP_CSS = True
+IPYNB_SKIP_CSS = False
