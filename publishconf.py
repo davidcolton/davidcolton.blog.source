@@ -12,7 +12,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = ""
+SITEURL = "https://davidcolton.github.io"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"
@@ -24,4 +24,3 @@ DELETE_OUTPUT_DIRECTORY = False
 
 DISQUS_SITENAME = "davidcoltonblog"
 # GOOGLE_ANALYTICS = ""
-

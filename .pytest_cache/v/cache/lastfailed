@@ -1,0 +1,4 @@
+{
+  "plugins/i18n_subsites/test_i18n_subsites.py": true,
+  "plugins/render_math/test_render_math.py": true
+}
